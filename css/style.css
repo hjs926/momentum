@@ -2,14 +2,139 @@
   display: none;
 }
 
-/* img {
+.background {
+  position: absolute;
+  margin: 0 auto;
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-cover {
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(158, 167, 156, 0.178);
+  z-index: 1;
+}
+
+body {
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+input[type="text"] {
+  width: 150px;
+  height: 25px;
+  border: 3px solid teal;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus {
+  width: 150px;
+  height: 25px;
+  border: 3px solid teal;
+  border-radius: 5px;
+}
+
+.button-name {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.button-name:hover {
+  border: none;
+  background-color: whitesmoke;
+}
+
+#todo-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-size: 15px;
+  color: black;
   opacity: 80%;
-}  뒷배경 이미지로 넣기 */
+}
+
+#todo-list {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-size: 25px;
+  color: tan;
+}
+
+#login-form {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-size: 15px;
+  color: whitesmoke;
+  opacity: 80%;
+}
+
+#greeting {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-size: 30px;
+  color: whitesmoke;
+  opacity: 80%;
+}
+
+.clock-font {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-size: 90px;
+  color: whitesmoke;
+  opacity: 80%;
+}
+
+.quote-font {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-size: 15x;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.weather-font {
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+.weather-font:hover {
+  border: none;
+  color: teal;
+}
