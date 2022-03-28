@@ -1,12 +1,13 @@
-자바스크립트 연습용 모멘텀 공부
+# 자바스크립트 연습용 모멘텀 공부
 
-#2.1 Basic Data Types
+## 2.1 Basic Data Types
 
 - 자바스크립트 데이터 타입
 - number: 숫자
 - string: 문자열
 
-#2.2 Variables
+## 2.2 Variables
+
 const(constant) >> 상수 = 바뀌지 않는 값
 var(variable) >> 변수
 
@@ -14,7 +15,8 @@ var(variable) >> 변수
 ex) VeryLongVariableName // 길이가 긴 변수를 선언할 때 Camelcase
 cf) Python에서는 very_long_variable_name
 
-#2.3 const and let
+## 2.3 const and let
+
 Variable을 만드는 방법
 
 1. const – 상수, 생성 후 바꿀 수 없음
@@ -24,14 +26,16 @@ Variable을 만드는 방법
     my Name = "k"; // 변경할 때 선언 하지 않는다
 3. var – 어디서든 변경할 수 있음, 재선언O, 재할당O, 실수로 값을 업데이트해도 알아차릴 수 없는 단점(구버전)
 
-#2.4 Booleans
+## #2.4 Booleans
+
 true false
 undefined = 값이 정의되지 않음
 null = 값이 없음
 
 파이썬에서는 None, False
 
-#2.5 Arrays
+## 2.5 Arrays
+
 const a = 2; 이렇게 있으면 a = 4; 이렇게 바꾸는건 안된다.
 하지만 배열과 같은 경우에는 내용물 안의 요소들을 변경이 가능하다.
 박스로 생각하면 const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
@@ -53,7 +57,7 @@ ex) console.log(daysOfWeek[4]) 라고 해야 5번째 값을 출력할 수 있다
 ex) daysOfWeek.push(“holiday”)
 // .push는 추가하는 기능.
 
-#2.6 Objects
+## 2.6 Objects
 
 - 설명이 필요하지 않은 데이터 리스트들을 array로 [ ]
 - 설명이 필요한 정보가 담긴 데이터 리스트들은 object로 { }
@@ -64,7 +68,8 @@ property를 불러오는 방법은 2가지가 있다.
 2. console.log(player["name"]); => tomato
    property를 바꾸는 것은 가능하지만 선언된 object를 바꾸는 것은 불가능하다.
 
-#2.7 Functions
+## 2.7 Functions
+
 function은 계속 반복해서 사용할 수 있는 코드 조각이다.
 소괄호 안에 작성하는 것은 실행버튼을 누를 때마다 발생한다.
 sayHello(); // 이렇게 쳐서 실행할 수 있다.
@@ -79,10 +84,12 @@ function 함수명() {
 funtion 실행: 함수명();
 argument(인수)를 보내야 하는데 인수란 함수를 실행하는 동안 어떤 정보를 함수에게 보낼 수 있는 방법이다.
 
-#2.8 Functions II
+## 2.8 Functions II
+
 인수를 받기 위해서 함수를 선언할 때 function 함수명(variable명) {} 를 작성한다.
 
-#2.9 Recap
+## 2.9 Recap
+
 let과 const의 차이는 let은 업데이트를 할 수 있다는 것이다.
 let을 업데이트 할 땐 다시 let을 붙이지 않아도 된다.
 
@@ -105,7 +112,8 @@ ex) days.push('생선') // days라는 변수에 '생선'이라는 string 값을 
 const의 object 값을 변경하는 행위는 const 자체를 변경하는 것이 아니고 objects값을
 변경하는 것이기 때문에 재할당 오류와 관계없다.
 
-#2.10 Recap II
+## 2.10 Recap II
+
 const calculator = {
 add:function(x, y){
 console.log(x + y);
@@ -129,12 +137,14 @@ calculator.mul(5, 6);
 calculator.div(7, 8);
 calculator.squ(9, 10);
 
-#2.11 Returns
+## 2.11 Returns
+
 계산기 안에서 값을 콘솔로 보내는 것이 아니라 return을 통해 함수를 호출한 녀석에게
 다시 주어서 그걸로 또 다른 함수를 호출하는 데 쓴다.
 이걸 이용해서 앞선 연산의 값이 뒤의 연산과 연관되고 체인처럼 서로 얽혀있을 수 있다.
 
-#2.12 Recap
+## 2.12 Recap
+
 alert 브라우저를 열 때 알림처럼 결과를 보여줌
 console.log는 콘솔에 결과를 보여주기 위한 것
 
@@ -149,7 +159,7 @@ ex) return: 만들어진 망고주스를 꺼내고 기계를 끄는 것, 말 그
 return a + b; 아래의
 bye bye는 실행되지 않는다
 
-#2.13 Conditionals
+## 2.13 Conditionals
 
 prompt();라는 함수는 사용자에게 창을 띄어 값을 받는다.
 prompt();를 사용하면 답을 할때까지 코드의 실행을 멈춘다. 매우 오래된 방법, CSS로 바꾸지 못함
@@ -166,7 +176,8 @@ ex) console.log(typeof "15", typeof parseInt("15")); --> string number
 const age = parseInt(prompt("how old are you?"));
 console.log(age);
 
-#2.14 Conditionals part Two
+## 2.14 Conditionals part Two
+
 isNan()은 NaN을 판별하는 방법 – true, false
 const age= parseInt(prompt (“How old are you?”));
 console.log(isNaN(age));
@@ -187,7 +198,8 @@ console.log("please wirte a number");
 console.log("Thank you for writing your age");
 }
 
-#2.15 Conditionals part Three
+## 2.15 Conditionals part Three
+
 true || true === true
 false || true === true
 true || false === true
@@ -213,7 +225,8 @@ false(boolean) === 0(number) --> false(difference))
 === --> 같은지 확인
 !== --> 같지 않음을 확인
 
-#3.0 The Document Object
+## 3.0 The Document Object
+
 JS가 HTML을 불러 올 수 도 있고, JS에서 수정도 가능하다.
 console에서 document를 입력하면 작성한 HTML을 가져올 수 있다.
 document는 브라우저에 존재하는 objet이다.
@@ -221,7 +234,8 @@ console에서 console.dir(document)를 호출해 보면,
 document.title이 HTML에서 정의한 title이랑 같다.
 document.body를 호출하면 body 항목만 가지고 온다.
 
-#3.1 HTML in Javascript
+## 3.1 HTML in Javascript
+
 document에서 js로 element를 굳이 저렇게 가져오는 이유, title을 변경할 거라면 html에서
 바로 변경하면 되는데 굳이 js에서 변경하는 이유
 
@@ -233,7 +247,8 @@ js에서는 html이 표현하는 object를 보여준다. getElementById()
 title.innerText = "got you"처럼 js에서 바꾸기 가능 id를 추가했기에 가능.
 모든 것들은 html에서 항목들을 가지와서 js에서 변경한다.
 
-#3.2 Searching For Elements
+## 3.2 Searching For Elements
+
 getElementById()
 getElementsByClassName()
 //tag = anchor, div, section, button 등
@@ -254,7 +269,7 @@ querySelector는 name 이나 ID를 제한하지 않고 CSS선택자를 사용하
 - querySelector("#hello); 와 getElementById("hello"); 는 같은 일을 하는 것임
   하지만 후자는 하위요소 가져오는 것을 못하므로 전자를 주로 사용한다.
 
-#3.3 Events
+## 3.3 Events
 
 - element의 내부를 보고 싶다면 console.log 대신에 console.dir를 사용한다.
 - JS에 function만을 넘겨주고, 유저가 클릭할 경우에 JS가 실행버튼을 대신 누른다.
@@ -278,13 +293,13 @@ querySelector는 name 이나 ID를 제한하지 않고 CSS선택자를 사용하
   여기서 handleTitleClick에 ()을 붙이지 않는게 정말 중요하다.
 - addEventListener 메서드 안에 들어가는 함수는 콜백함수
 
-#3.4 Events part Two
+## 3.4 Events part Two
 
 - event를 찾는 가장 좋은 방법은 구글에 ex) h1 html element mdn 검색
 - element를 console.dir로 출력해서 on~ 이라고 적혀있는걸 사용
 - 대부분의 경우 style은 CSS를 통해 변경한다.
 
-#3.5 More Events
+## 3.5 More Events
 
 - document의 body, head, title는 중요하기 때문에 document.body.style~의 명령이 허용
   되지만 div 등은 호출이 되지 않는다.
@@ -294,7 +309,7 @@ querySelector는 name 이나 ID를 제한하지 않고 CSS선택자를 사용하
 - 위에 두 코드는 동일하나 addEventListener를 선호하는 이유는
   removeEventListener을 통해서 event listener을 제거할수있기 때문이다.
 
-#3.6 CSS in Javascript
+## 3.6 CSS in Javascript
 
 - currentColor에 현재 색상 값을 저장하고 이후 newColor 변수를 선언해서 if문에 따라
   어떤 색상을 지정할지 값을 할당한다.
@@ -313,7 +328,7 @@ querySelector는 name 이나 ID를 제한하지 않고 CSS선택자를 사용하
 5. 조건에 따라 newColor에 "tomato" or "blue" 값 대입
 6. 마지막으로 h1.style.color에 newColor값 대입 (setter)
 
-#3.7 CSS in Javascript part Two
+## 3.7 CSS in Javascript part Two
 
 - style에 적합한 도구는 CSS
 - animation에 적합한 도구는 JS
@@ -324,7 +339,7 @@ querySelector는 name 이나 ID를 제한하지 않고 CSS선택자를 사용하
 4. handleTitleClick 함수는 h1의 class name을 "active" 로 바꿈
 5. .active의 color는 토마토색이기 때문에 토마토 색이 됨
 
-#3.8 CSS in Javascript part Three
+## 3.8 CSS in Javascript part Three
 
 - classList 우리가 class들의 목록으로 작업할수 있게끔 허용해준다.
 - className은 이전calss를 상관하지 않고 모든 것을 교체한다.
@@ -336,11 +351,12 @@ querySelector는 name 이나 ID를 제한하지 않고 CSS선택자를 사용하
   toggle이 clicked를 제거해준다 만약 class name이 존재하지 않는다면
   toggle은 classname 추가한다.
 
-#4.1 Form Submission
+## 4.1 Form Submission
 
 - JavaScript에서 구현하는 대신 할 수 있다면 HTML의 기본 속성을 최대한 이용하기
 
-#4.2 Events
+## 4.2 Events
+
 function onLoginSubmit(event){
 event.preventDefault(); // 브라우저가 기본 동작을 실행하지 못하게 막기
 // event object는 preventDefault함수를 기본적으로 갖고 있음
@@ -363,24 +379,24 @@ loginForm.addEventListener("submit", onLoginSubmit);
   정보들에 대한 object들을 볼 수 있다!
 - 이때 해당 이벤트가 가진 기본 Default값을 발생시키지 않게 하게 위해선 preventDefault를 이용하여 막을 수 있다!
 
-#4.4 Getting Username
+## 4.4 Getting Username
 
 - greeting.innerText = “Hello” + username;
 - geeting.innerText = `hello ${username}`; (백틱 사용)
 
-#4.5 Saving Username
+## 4.5 Saving Username
 
 - lcoalStorage 브라우저에 무언가를 저장한 후 나중에 가져 올 수 있음.
 - lcoalStorage.setItem("username", "nico");
 - lcoalStorage.getItem("username")
 - lcoalStorage.removeItem("username")
 
-#4.6 Loading Username
+## 4.6 Loading Username
 
 - 최종으로 목표하는 것은 인풋에 텍스트를 입력하고 submit 버튼을 클릭했을 때 그에 대한 값이 local storage에 저장되어 그것을 보는 것인데, 만약 loginInput.value를
   onLoginSubmit 함수 내부가 아닌 외부에서 선언하면 local storage에 저장을 못한다.
 
-#4.7 Super Recap
+## 4.7 Super Recap
 
 - event가 원래 하는 행동을 멈추기 event.preventDefault();
 - form을 다시 숨겨주기 loginForm.classList.add(HIDDEN_CLASSNAME);
@@ -394,21 +410,21 @@ loginForm.addEventListener("submit", onLoginSubmit);
 - 그럼 이 조건이 참이되고 폼의 히든 클래스를 제거해서 폼이 화면에 표시되고
 - addEventListner의 submit이 실행된다.
 
-#5.0 Intervals
+## 5.0 Intervals
 
 - interval = 매번 일어나야 하는 무언가
 - setInterval(실행할 함수, 실행할 함수의 주기)
 
-#5.1 Timeouts and Dates
+## 5.1 Timeouts and Dates
 
 - setInterval(sayHello, 1000);
 - sayHello() 라는 펑션을 1초마다 반복한다는 의미.
 - 단 바로 실행되지 않고 1초 후 첫 시작이 되고 계속 1초마다 반복된다.
 - setTimeout(sayHello, 1000); - 1초 기다렸다가 한번만 실행.
 
-#5.2 PadStart
+## 5.2 PadStart
 
-#5.3 Recap
+## 5.3 Recap
 
 - setInterval 사용하지 않으면 반복되지 않는다.
 - setTimeout(sayHello,1000);는 함수를 바로 실행하고 싶지않을 때 사용
@@ -416,13 +432,13 @@ loginForm.addEventListener("submit", onLoginSubmit);
 - padStart(2,"0") 2는 두글자가 되지않으면 0을 앞에 추가한다 라는 의미임.
 - 뒤에 추가하고싶으면 padEnd를 사용하면됨.
 
-#6.0 Quotes
+## 6.0 Quotes
 
 - Math.floor는 소수점을 버리는 것(버림) ex) 1.1 -> 1
 - Math.ceil은 소수점을 올리는 것(올림) ex) 1.1 -> 2
 - Math.round는 소수점을 반올림 ex) 1.6 -> 2
 
-#6.1 Background
+## 6.1 Background
 
 - appendChild를 사용할 때 body에 넣고 싶은 위치에 정확히 넣으려면 insertBefor()
   메소드를 사용하면 된다. 참조된 노드 앞에 특정 부모 노드의 자식 노드를 삽입한다.
@@ -431,7 +447,7 @@ loginForm.addEventListener("submit", onLoginSubmit);
 - document.body.insertBefore(bgImage, h2);
 - 두개의 인자중에 앞의 bgImage는 새로운 노드 즉 추가하고 싶은 노드이고 h2는 참조할 노드입니다. 즉 이렇게 코드를 짜시면 h2요소 앞에 bgImage가 추가 된다.
 
-#6.2 Recap
+## 6.2 Recap
 
 1. Math 객체 기능
 
@@ -447,7 +463,7 @@ loginForm.addEventListener("submit", onLoginSubmit);
 - appendChild() // 함수 안의 경로에 정의한 값을 가장 뒤에서 기입함
 - prependChild() // 반대로 앞에서 기입
 
-#7.0 Setup
+## 7.0 Setup
 
 1. html
 
@@ -478,14 +494,14 @@ loginForm.addEventListener("submit", onLoginSubmit);
    toDoform.addEventListner("submit", handleTodoSubmit); 을 기입한다.
    (함수 handleTodoSubmit이 항상 실행되고 있는 상태라면 text 창은 항상 비어있는 상태 일 것이기 때문에)
 
-7.1 Adding ToDos
+## 7.1 Adding ToDos
 
 - append()가 추가할 수 있는 종류가 더 많다. (문자열 가능)
 - appendChild()로는 객체만 추가할 수 있다.
 - li.append("추가해주세요") → (가능)
 - li.appendChild("추가해주세요") → (불가능 – typeError)
 
-#7.2 Deleting To Dos
+## 7.2 Deleting To Dos
 
 1. JS에서 html 내부에 button 태그 만들기
 
@@ -505,29 +521,29 @@ loginForm.addEventListener("submit", onLoginSubmit);
    실행된다.
 2) function deleteToDo(event) { const li = event.target.parentElement; li.remove(); }
 
-#7.3 Saving To Dos
+## 7.3 Saving To Dos
 
 - STRINGIFY = 변수 등을 문자열로 바꿈, PARSE = 문자열을 JSON으로 바꿈
 - localstorage 에서는 문자열만 저장할 수 있다
 
-#7.4 Loading To Dos part One
+## 7.4 Loading To Dos part One
 
 - local storage는 string format 밖에 지원을 안해서 뭐든 string으로 변환 시킨다.
 - local storage에 array로 저장이 안되기 때문에 JSON.stringify로 array처럼 생긴 string으로 저장한 후 다시 JSON.parse 이용해 array로 꺼내는 방법
 - array.foreach는 받아온 array를 for 반복문 없이 item 하나씩 function에 넣을 수 있다.
 
-#7.5 Loading To Dos part Two
+## 7.5 Loading To Dos part Two
 
 - JSON.stirngify(): JS의 object 나 array 등을 string으로 변환
 - JSON.parse(): string이 아닌 JS에서 사용가능한 object로 변환
 
-#7.6 Deleting To Dos part One
+## 7.6 Deleting To Dos part One
 
 - object형태로 localstorage에 넣기
 
-#7.7 Deleting To Dos part Two
+## 7.7 Deleting To Dos part Two
 
 - forEach 함수는 paintToDo를 parsedToDos 배열의 요소마다 실행한다
 - filter를 사용해서 바나나를 지우기 sexyFilter() 안에 인자 이름은 아무거나 사용해도 된다.
 
-끝~ 굿굿
+## END
