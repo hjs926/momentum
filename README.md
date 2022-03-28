@@ -15,6 +15,8 @@ var(variable) >> 변수
 ex) VeryLongVariableName // 길이가 긴 변수를 선언할 때 Camelcase
 cf) Python에서는 very_long_variable_name
 
+![image](https://user-images.githubusercontent.com/48309309/160383062-edad82a1-d5c4-4c04-b69d-519d05ffa43a.png)
+
 ## 2.3 const and let
 
 Variable을 만드는 방법
@@ -26,6 +28,10 @@ Variable을 만드는 방법
     my Name = "k"; // 변경할 때 선언 하지 않는다
 3. var – 어디서든 변경할 수 있음, 재선언O, 재할당O, 실수로 값을 업데이트해도 알아차릴 수 없는 단점(구버전)
 
+![image](https://user-images.githubusercontent.com/48309309/160383092-4945764a-73be-4409-b5a5-ab5dab3e69cb.png)
+
+always const sometimes let never var
+
 ## #2.4 Booleans
 
 true false
@@ -33,6 +39,10 @@ undefined = 값이 정의되지 않음
 null = 값이 없음
 
 파이썬에서는 None, False
+
+![image](https://user-images.githubusercontent.com/48309309/160383235-e3f60247-3215-4b57-a0b7-44e240f25381.png)
+
+![image](https://user-images.githubusercontent.com/48309309/160383239-8d91ac1f-d88a-48dc-8396-9d31ebce7fd7.png)
 
 ## 2.5 Arrays
 
@@ -57,6 +67,8 @@ ex) console.log(daysOfWeek[4]) 라고 해야 5번째 값을 출력할 수 있다
 ex) daysOfWeek.push(“holiday”)
 // .push는 추가하는 기능.
 
+![image](https://user-images.githubusercontent.com/48309309/160383267-aaa2c417-45c5-43bc-ab05-0494e639caae.png)
+
 ## 2.6 Objects
 
 - 설명이 필요하지 않은 데이터 리스트들을 array로 [ ]
@@ -68,9 +80,14 @@ property를 불러오는 방법은 2가지가 있다.
 2. console.log(player["name"]); => tomato
    property를 바꾸는 것은 가능하지만 선언된 object를 바꾸는 것은 불가능하다.
 
+   ![image](https://user-images.githubusercontent.com/48309309/160383283-abfe6415-70a6-4e4d-904b-7d414e326787.png)
+
 ## 2.7 Functions
 
 function은 계속 반복해서 사용할 수 있는 코드 조각이다.
+
+![image](https://user-images.githubusercontent.com/48309309/160383300-2d65e78d-0e2f-4b5a-a57f-d746e64c4f12.png)
+
 소괄호 안에 작성하는 것은 실행버튼을 누를 때마다 발생한다.
 sayHello(); // 이렇게 쳐서 실행할 수 있다.
 argument(인수)는 function을 실행하는 도안 정보를 function에게 보낼 수 있는 방법으로
@@ -85,6 +102,10 @@ funtion 실행: 함수명();
 argument(인수)를 보내야 하는데 인수란 함수를 실행하는 동안 어떤 정보를 함수에게 보낼 수 있는 방법이다.
 
 ## 2.8 Functions II
+
+![image](https://user-images.githubusercontent.com/48309309/160383365-1d2c27b8-7c19-4151-8b6a-aba53de1345a.png)
+
+![image](https://user-images.githubusercontent.com/48309309/160383373-20f9ded0-38b3-4163-9684-2719def83125.png)
 
 인수를 받기 위해서 함수를 선언할 때 function 함수명(variable명) {} 를 작성한다.
 
@@ -137,11 +158,15 @@ calculator.mul(5, 6);
 calculator.div(7, 8);
 calculator.squ(9, 10);
 
+![image](https://user-images.githubusercontent.com/48309309/160383414-2b6c92c1-6ac8-4710-b15f-6ffb6205cc67.png)
+
 ## 2.11 Returns
 
 계산기 안에서 값을 콘솔로 보내는 것이 아니라 return을 통해 함수를 호출한 녀석에게
 다시 주어서 그걸로 또 다른 함수를 호출하는 데 쓴다.
 이걸 이용해서 앞선 연산의 값이 뒤의 연산과 연관되고 체인처럼 서로 얽혀있을 수 있다.
+
+![image](https://user-images.githubusercontent.com/48309309/160383440-adcc7cf9-fcdb-47e1-bacd-958e7e0b432d.png)
 
 ## 2.12 Recap
 
@@ -158,6 +183,8 @@ ex) return: 만들어진 망고주스를 꺼내고 기계를 끄는 것, 말 그
 
 return a + b; 아래의
 bye bye는 실행되지 않는다
+
+![image](https://user-images.githubusercontent.com/48309309/160383457-77b42362-d203-4786-b331-a972422997d9.png)
 
 ## 2.13 Conditionals
 
@@ -210,7 +237,10 @@ false && true === false
 true && false === false
 false && false === false
 
-#2.16 Recap
+![image](https://user-images.githubusercontent.com/48309309/160383485-4d10574c-9fa1-45a4-9b49-c4371f0c3a49.png)
+
+## 2.16 Recap
+
 ==연산자는 binaryCode로 구분해서 값만 비교
 ===연산자는 유형도 포함해 비교해서  
 ===를 주로 사용하는걸 추천한다.
@@ -269,7 +299,13 @@ querySelector는 name 이나 ID를 제한하지 않고 CSS선택자를 사용하
 - querySelector("#hello); 와 getElementById("hello"); 는 같은 일을 하는 것임
   하지만 후자는 하위요소 가져오는 것을 못하므로 전자를 주로 사용한다.
 
+![image](https://user-images.githubusercontent.com/48309309/160383532-a6bb21a8-9275-4a2c-8485-5e310a92f0a5.png)
+
+![image](https://user-images.githubusercontent.com/48309309/160383537-f4f789e2-af97-4e1c-8ee4-fcf31ade657f.png)
+
 ## 3.3 Events
+
+![image](https://user-images.githubusercontent.com/48309309/160383573-42a9e37f-aa89-4b4e-b159-1689dc1bc0c1.png)
 
 - element의 내부를 보고 싶다면 console.log 대신에 console.dir를 사용한다.
 - JS에 function만을 넘겨주고, 유저가 클릭할 경우에 JS가 실행버튼을 대신 누른다.
@@ -295,11 +331,15 @@ querySelector는 name 이나 ID를 제한하지 않고 CSS선택자를 사용하
 
 ## 3.4 Events part Two
 
+![image](https://user-images.githubusercontent.com/48309309/160383614-f72f11f3-f74c-419b-bc9b-32be12535195.png)
+
 - event를 찾는 가장 좋은 방법은 구글에 ex) h1 html element mdn 검색
 - element를 console.dir로 출력해서 on~ 이라고 적혀있는걸 사용
 - 대부분의 경우 style은 CSS를 통해 변경한다.
 
 ## 3.5 More Events
+
+![image](https://user-images.githubusercontent.com/48309309/160383643-ca5c516d-e1bf-4d77-ac2b-b617829a9656.png)
 
 - document의 body, head, title는 중요하기 때문에 document.body.style~의 명령이 허용
   되지만 div 등은 호출이 되지 않는다.
@@ -321,6 +361,8 @@ querySelector는 name 이나 ID를 제한하지 않고 CSS선택자를 사용하
   const currentColor로 변수 선언을 하더라도, 함수가 호출될 때 마다 새로운 값을
   받을 수 있다.
 
+  ![image](https://user-images.githubusercontent.com/48309309/160383661-c02f0b1e-834c-406a-9742-4c62b267eb99.png)
+
 1. click event 발생 및 함수 실행
 2. currentColor 변수 선언 후 h1.style.color 값 복사 (getter)
 3. newColor 변수 선언
@@ -333,6 +375,8 @@ querySelector는 name 이나 ID를 제한하지 않고 CSS선택자를 사용하
 - style에 적합한 도구는 CSS
 - animation에 적합한 도구는 JS
 
+![image](https://user-images.githubusercontent.com/48309309/160383690-60b6972d-a3fc-4c0a-b2cf-00add6452812.png)
+
 1. HTML파일은 CSS문서와 JS문서를 임포트 하고있음.
 2. CSS에 .active라는 class를 생성해주고
 3. addEventListener로 h1을 클릭하면 handleTitleClick 함수가 작동
@@ -340,6 +384,8 @@ querySelector는 name 이나 ID를 제한하지 않고 CSS선택자를 사용하
 5. .active의 color는 토마토색이기 때문에 토마토 색이 됨
 
 ## 3.8 CSS in Javascript part Three
+
+![image](https://user-images.githubusercontent.com/48309309/160383716-a3cb7f40-063d-4b42-a100-7f5d2bc9d5b7.png)
 
 - classList 우리가 class들의 목록으로 작업할수 있게끔 허용해준다.
 - className은 이전calss를 상관하지 않고 모든 것을 교체한다.
@@ -351,11 +397,17 @@ querySelector는 name 이나 ID를 제한하지 않고 CSS선택자를 사용하
   toggle이 clicked를 제거해준다 만약 class name이 존재하지 않는다면
   toggle은 classname 추가한다.
 
+## 4.0 Input Values
+
+![image](https://user-images.githubusercontent.com/48309309/160383759-c440b533-9049-482b-a6c2-e743598d9bb2.png)
+
 ## 4.1 Form Submission
 
 - JavaScript에서 구현하는 대신 할 수 있다면 HTML의 기본 속성을 최대한 이용하기
 
 ## 4.2 Events
+
+![image](https://user-images.githubusercontent.com/48309309/160383782-3614e089-ec26-4338-833d-556c69bb6e08.png)
 
 function onLoginSubmit(event){
 event.preventDefault(); // 브라우저가 기본 동작을 실행하지 못하게 막기
@@ -381,6 +433,8 @@ loginForm.addEventListener("submit", onLoginSubmit);
 
 ## 4.4 Getting Username
 
+![image](https://user-images.githubusercontent.com/48309309/160383803-3982fa0b-adb4-4b88-b4b7-3af10da4b2f0.png)
+
 - greeting.innerText = “Hello” + username;
 - geeting.innerText = `hello ${username}`; (백틱 사용)
 
@@ -398,14 +452,22 @@ loginForm.addEventListener("submit", onLoginSubmit);
 
 ## 4.7 Super Recap
 
+![image](https://user-images.githubusercontent.com/48309309/160383829-c9800be3-e7bf-4298-8ef2-00e7fbec4f40.png)
+
 - event가 원래 하는 행동을 멈추기 event.preventDefault();
 - form을 다시 숨겨주기 loginForm.classList.add(HIDDEN_CLASSNAME);
 - loginInput.value를 username이라는 변수로 저장해주기
+
+![image](https://user-images.githubusercontent.com/48309309/160383850-a2dfb8ba-f31f-4a9d-b4ba-179e5354c731.png)
+
 - username 값을 username 이라는 key와 함께 local stroage에 저장하기
 - paintGreetings 함수 호출하기
 - username이라는 인자를 하나 받고 있고 이 함수가 하는 일은 비어있는 h1 요소 안에
   `Hello ${username}` 이라는 텍스트를 추가해준다.
 - 그 다음에 hidden이라는 클래스 명을 제거해준다
+
+![image](https://user-images.githubusercontent.com/48309309/160383873-087ee807-44e0-488f-982b-e7c36a7a41e1.png)
+
 - local strage에서 키를 찾으려고 했는데 키를 찾으려고 했는데 찾을 수 없었고 그 말은 savedUsername 값이 null 이란 이야기다.
 - 그럼 이 조건이 참이되고 폼의 히든 클래스를 제거해서 폼이 화면에 표시되고
 - addEventListner의 submit이 실행된다.
@@ -417,6 +479,8 @@ loginForm.addEventListener("submit", onLoginSubmit);
 
 ## 5.1 Timeouts and Dates
 
+![image](https://user-images.githubusercontent.com/48309309/160383903-cadf9201-c207-4c7a-8f12-ad393bd88424.png)
+
 - setInterval(sayHello, 1000);
 - sayHello() 라는 펑션을 1초마다 반복한다는 의미.
 - 단 바로 실행되지 않고 1초 후 첫 시작이 되고 계속 1초마다 반복된다.
@@ -426,6 +490,10 @@ loginForm.addEventListener("submit", onLoginSubmit);
 
 ## 5.3 Recap
 
+![image](https://user-images.githubusercontent.com/48309309/160383961-d2785459-c4eb-430d-a144-6ccff03d86bb.png)
+
+![image](https://user-images.githubusercontent.com/48309309/160383942-74f02a32-c625-42bd-9ce5-d0ee61040b3d.png)
+
 - setInterval 사용하지 않으면 반복되지 않는다.
 - setTimeout(sayHello,1000);는 함수를 바로 실행하고 싶지않을 때 사용
 - getHourse().padStart(2,"0") 는 01로 나오게 하기 위한 함수
@@ -434,11 +502,15 @@ loginForm.addEventListener("submit", onLoginSubmit);
 
 ## 6.0 Quotes
 
+![image](https://user-images.githubusercontent.com/48309309/160383974-9ac842d2-7884-4f21-8ae8-e6b143a8e736.png)
+
 - Math.floor는 소수점을 버리는 것(버림) ex) 1.1 -> 1
 - Math.ceil은 소수점을 올리는 것(올림) ex) 1.1 -> 2
 - Math.round는 소수점을 반올림 ex) 1.6 -> 2
 
 ## 6.1 Background
+
+![image](https://user-images.githubusercontent.com/48309309/160383995-426fadab-0116-483b-bcfe-d83886602f50.png)
 
 - appendChild를 사용할 때 body에 넣고 싶은 위치에 정확히 넣으려면 insertBefor()
   메소드를 사용하면 된다. 참조된 노드 앞에 특정 부모 노드의 자식 노드를 삽입한다.
@@ -503,6 +575,8 @@ loginForm.addEventListener("submit", onLoginSubmit);
 
 ## 7.2 Deleting To Dos
 
+![image](https://user-images.githubusercontent.com/48309309/160384024-169f13a4-04f2-43d3-a634-9a4cd8aaebf0.png)
+
 1. JS에서 html 내부에 button 태그 만들기
 
 1) const button = document.createElement("button");
@@ -522,6 +596,8 @@ loginForm.addEventListener("submit", onLoginSubmit);
 2) function deleteToDo(event) { const li = event.target.parentElement; li.remove(); }
 
 ## 7.3 Saving To Dos
+
+![image](https://user-images.githubusercontent.com/48309309/160384056-2aa9f8f4-3625-4bac-a8fb-fd20baeefd52.png)
 
 - STRINGIFY = 변수 등을 문자열로 바꿈, PARSE = 문자열을 JSON으로 바꿈
 - localstorage 에서는 문자열만 저장할 수 있다
@@ -543,7 +619,26 @@ loginForm.addEventListener("submit", onLoginSubmit);
 
 ## 7.7 Deleting To Dos part Two
 
+![image](https://user-images.githubusercontent.com/48309309/160384077-fcd7bb31-a764-4750-933f-f2f29069cc14.png)
+
 - forEach 함수는 paintToDo를 parsedToDos 배열의 요소마다 실행한다
+
+![image](https://user-images.githubusercontent.com/48309309/160384101-9972ffdf-d416-4136-be38-eedefd7f314f.png)
+
 - filter를 사용해서 바나나를 지우기 sexyFilter() 안에 인자 이름은 아무거나 사용해도 된다.
+
+![image](https://user-images.githubusercontent.com/48309309/160384139-90b51ea6-6a48-4ce2-b78f-1cfcdd4eaf11.png)
+
+- 1000보다 큰수를 모두 제거하기
+
+![image](https://user-images.githubusercontent.com/48309309/160384175-3a272ca8-8ad9-40f3-bc2b-a88e8f244de6.png)
+
+## 7.8 Deleting To Dos part Three
+
+![image](https://user-images.githubusercontent.com/48309309/160384230-1f57a948-b895-4356-8a11-0a562f67131d.png)
+
+## 8.0 Geolocation
+
+![image](https://user-images.githubusercontent.com/48309309/160384269-56642edf-ac3c-40c3-bbcb-f737c972ba25.png)
 
 ## END
